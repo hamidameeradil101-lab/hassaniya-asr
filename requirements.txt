@@ -1,0 +1,17 @@
+# Install PyTorch for your CUDA version first (https://pytorch.org/get-started/locally/).
+# Versions below are the ones the reported run used (Kaggle, 2026-09) or newer.
+
+# Training (train_whisper.py / hassanyia-whisper-medium.ipynb)
+transformers>=5.2,<6
+datasets>=4
+accelerate
+bitsandbytes   # 8-bit AdamW; GPU only
+jiwer>=4
+soundfile
+numpy
+pandas
+
+# Data preparation (Prototype_small.ipynb) — also needs the packages above
+librosa
+scikit-learn
+pyarrow

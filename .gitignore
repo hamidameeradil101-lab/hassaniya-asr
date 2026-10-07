@@ -1,0 +1,32 @@
+# --- Data (large files) ---
+*.parquet
+*.wav
+*.flac
+*.mp3
+*.zip
+data/
+
+# Training outputs and model weights (large files)
+whisper-medium-hassaniya/
+checkpoint-*/
+best/
+api/checkpoint/
+*.safetensors
+*.bin
+*.pt
+*.pth
+# Contain the dataset's reference transcripts; results_*.json and experiments.csv hold metrics only and are fine
+test_predictions_*.csv
+
+# --- Internal working files (delete a line to publish that file) ---
+PROJECT_PLAN.md
+CLAUDE.md
+archive/
+
+# --- Python / Jupyter clutter ---
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+.venv/
+venv/
+api/test_audio/

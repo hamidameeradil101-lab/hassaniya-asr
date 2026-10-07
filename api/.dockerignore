@@ -1,0 +1,6 @@
+checkpoint/
+venv/
+.venv/
+__pycache__/
+*.wav
+test_inference.py
